@@ -42,3 +42,7 @@ Listings/
 
 *.axfdump
 /crypto/lib
+/crypto/private_crypto
+/crypto/lib_for_sdk
+/Solutions/NUCLEOF401RE/build_flash_release.txt
+/Solutions/NUCLEOL476RG/build_flash_release.txt

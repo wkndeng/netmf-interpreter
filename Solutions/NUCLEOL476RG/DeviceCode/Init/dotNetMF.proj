@@ -1,0 +1,33 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AssemblyName>IO_Init_NUCLEOL476RG</AssemblyName>
+    <Size>
+    </Size>
+    <ProjectGuid>{0225D993-DE96-470A-BC79-D429711C3B93}</ProjectGuid>
+    <Description>IO port initialization for NUCLEOL476RG solution</Description>
+    <Level>HAL</Level>
+    <LibraryFile>IO_Init_NUCLEOL476RG.$(LIB_EXT)</LibraryFile>
+    <ManifestFile>IO_Init_NUCLEOL476RG.$(LIB_EXT).manifest</ManifestFile>
+    <Groups>Solutions\NUCLEOL476RG</Groups>
+    <LibraryCategory>
+    </LibraryCategory>
+    <Documentation>
+    </Documentation>
+    <PlatformIndependent>False</PlatformIndependent>
+    <Required>False</Required>
+    <IgnoreDefaultLibPath>False</IgnoreDefaultLibPath>
+    <IsStub>False</IsStub>
+    <Directory>Solutions\NUCLEOL476RG\DeviceCode\Init</Directory>
+    <OutputType>Library</OutputType>
+    <PlatformIndependentBuild>false</PlatformIndependentBuild>
+    <Version>4.0.0.0</Version>
+  </PropertyGroup>
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Settings" />
+  <PropertyGroup />
+  <ItemGroup>
+    <HFiles Include="$(SPOCLIENT)\DeviceCode\Targets\Native\STM32L4\DeviceCode\stm32l4xx.h" />
+    <Compile Include="IO_Init.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(SPOCLIENT)\tools\targets\Microsoft.SPOT.System.Targets" />
+</Project>
